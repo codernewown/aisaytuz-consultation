@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AISAYT.UZ - Professional Sayt Yaratish (Minimalist)</title>
+    <meta name="description"
+        content="Biznesingiz uchun zamonaviy va professional sayt yaratib beramiz. Bepul konsultatsiya oling!">
+    <link rel="icon" type="image/png" href="../logo.png">
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Main Content -->
+    <main class="main-container">
+        <!-- Promo Badge -->
+        <div class="date-badge fade-in">
+            <span class="date"><i data-lucide="flame"></i> Chegirma</span>
+            <span class="time">-30%</span>
+        </div>
+
+        <!-- Hero Title -->
+        <h1 class="hero-title fade-in-up">
+            Kompaniyangiz obro'sini oshiruvchi
+            <span class="highlight">ishonchli veb-saytlar</span>
+            yaratib beramiz
+        </h1>
+
+        <!-- Service Preview -->
+        <div class="speaker-section fade-in-up delay-100">
+            <div class="breathing-shape"></div>
+        </div>
+
+        <!-- Urgency Banner -->
+        <div class="urgency-banner fade-in-up delay-200">
+            <div class="urgency-text">
+                <span class="urgency-icon"><i data-lucide="shield-check"></i></span>
+                <span>Biznesingizni yangi bosqichga olib chiqing</span>
+                <span class="limited">Chegirma muddati:</span>
+            </div>
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">00</span>
+                    <span class="countdown-label">soat</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">00</span>
+                    <span class="countdown-label">daqiqa</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">00</span>
+                    <span class="countdown-label">soniya</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Button -->
+        <button type="button" class="submit-btn click-effect" id="openFormBtn">
+            <span>BEPUL KONSULTATSIYA</span>
+        </button>
+
+        <!-- Services Section -->
+        <section class="benefits-section fade-in-up delay-300">
+            <h2 class="benefits-title">Afzalliklarimiz</h2>
+            <ul class="benefits-list">
+                <li class="benefit-item">
+                    <span class="benefit-icon"><i data-lucide="layout-template"></i></span>
+                    <span>Aniq va tushunarli interfeys</span>
+                </li>
+                <li class="benefit-item">
+                    <span class="benefit-icon"><i data-lucide="briefcase"></i></span>
+                    <span>Korporativ uslub va jiddiy yondashuv</span>
+                </li>
+                <li class="benefit-item">
+                    <span class="benefit-icon"><i data-lucide="smartphone"></i></span>
+                    <span>Barcha qurilmalarda mukammal ko'rinish</span>
+                </li>
+                <li class="benefit-item">
+                    <span class="benefit-icon"><i data-lucide="thumbs-up"></i></span>
+                    <span>Mijozlar ishonchini oqlash kafolati</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Trust Badges -->
+        <div class="trust-section fade-in-up delay-400">
+            <div class="trust-item">
+                <span class="trust-number">500+</span>
+                <span class="trust-label">loyihalar</span>
+            </div>
+            <div class="trust-item">
+                <span class="trust-number">99%</span>
+                <span class="trust-label">rozlik</span>
+            </div>
+            <div class="trust-item">
+                <span class="trust-number">5+</span>
+                <span class="trust-label">yil tajriba</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- Form Modal -->
+    <div id="formModal" class="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content form-modal">
+            <button type="button" class="modal-close" id="closeFormModal"><i data-lucide="x"></i></button>
+            <div class="modal-icon"><i data-lucide="file-edit"></i></div>
+            <h3>Ma'lumotlaringizni qoldiring</h3>
+            <p>Biz siz bilan tez orada bog'lanamiz</p>
+
+            <form id="leadForm" class="lead-form modal-form">
+                <div class="form-group">
+                    <div class="input-icon"><i data-lucide="user"></i></div>
+                    <input type="text" id="userName" name="name" placeholder="Ismingiz" required>
+                </div>
+                <div class="form-group">
+                    <div class="input-icon"><i data-lucide="phone"></i></div>
+                    <input type="tel" id="userPhone" name="phone" placeholder="+998 90 123 45 67" required>
+                </div>
+                <button type="submit" class="submit-btn click-effect">
+                    <span>YUBORISH</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content success-modal">
+            <div class="modal-icon success-icon"><i data-lucide="check-circle"></i></div>
+            <h3>Rahmat!</h3>
+            <p>Arizangiz muvaffaqiyatli qabul qilindi!</p>
+            <p class="modal-subtitle">Telegram kanalimizga:</p>
+            <a href="https://t.me/aisaytuz" target="_blank" class="telegram-btn click-effect" id="telegramBtn">
+                <span class="tg-icon"><i data-lucide="send"></i></span>
+                <span>@aisaytuz</span>
+            </a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
